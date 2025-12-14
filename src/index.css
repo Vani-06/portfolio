@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at top, #111, #000);
+  color: white;
+  font-family: system-ui, sans-serif;
+  overflow-x: hidden;
+}

@@ -1,0 +1,88 @@
+.app {
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid #333;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  background: #7c7cff;
+  border-color: #7c7cff;
+}
+
+.canvas-wrapper {
+  height: 200px;
+  max-width: 700px;
+  margin: 1.5rem auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.section {
+  margin-top: 4rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #7c7cff;
+  padding-left: 0.8rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(6px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.credit-card {
+  background: linear-gradient(135deg, #6b73ff, #000dff);
+  color: white;
+  border-radius: 18px;
+  padding: 1.5rem;
+  font-family: monospace;
+}
+
+.credit-card .number {
+  letter-spacing: 3px;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
