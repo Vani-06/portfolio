@@ -34,14 +34,14 @@ export default function App() {
 
       <div className="links">
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/Vani-06"
           target="_blank"
           rel="noreferrer"
         >
           GitHub
         </a>
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/vani-singh-0547b737a/"
           target="_blank"
           rel="noreferrer"
         >
@@ -78,8 +78,8 @@ export default function App() {
       <div className="section">
         <h2>Achievements</h2>
         <div className="grid">
-          <div className="card">LeetCode Rating: 1800+</div>
-          <div className="card">CodeChef: 4★</div>
+          <div className="card">blank</div>
+          <div className="card">Hackbattle winner</div>
           <div className="card">ICPC Aspirant</div>
           <div className="card">Hackathon Participant</div>
         </div>
