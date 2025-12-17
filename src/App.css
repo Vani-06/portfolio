@@ -1,49 +1,98 @@
-.app {
-  min-height: 100vh;
-  padding: 2rem;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  background: radial-gradient(circle at top, #04040a, #050510);
+  color: #ffffff;
+}
+
+
+h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1.4rem;
+  letter-spacing: 0.3px;
   text-align: center;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
 p {
-  color: #aaa;
+  color: #086306;
   margin-bottom: 1rem;
+  line-height: 1.6;
+  text-align: center;
 }
 
 .links {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin: 1rem 0;
+  margin: 1.2rem 0;
 }
 
 .links a {
-  color: white;
+  color: rgb(58, 8, 66);
   text-decoration: none;
-  border: 1px solid #333;
-  padding: 0.6rem 1.2rem;
-  border-radius: 10px;
-  transition: 0.3s;
+  border: 1px solid rgba(58, 4, 59, 0.15);
+  padding: 0.6rem 1.3rem;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  transition: all 0.25s ease;
 }
 
 .links a:hover {
   background: #7c7cff;
   border-color: #7c7cff;
+  transform: translateY(-2px);
 }
 
+/* =========================
+   3D CANVAS
+========================= */
 .canvas-wrapper {
-  height: 200px;
-  max-width: 700px;
-  margin: 1.5rem auto;
-  border-radius: 16px;
+  height: 300px;
+  max-width: 720px;
+  margin: 2rem auto;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.75);
 }
 
+/* =========================
+   INFO CARD (Skill Click)
+========================= */
+.info-card {
+  max-width: 420px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  border-radius: 18px;
+  background: rgba(124, 124, 255, 0.16);
+  backdrop-filter: blur(10px);
+}
+
+.info-card h2 {
+  margin-top: 0;
+}
+
+.info-card button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: #7c7cff;
+  color: white;
+}
+
+/* =========================
+   SECTIONS
+========================= */
 .section {
   margin-top: 4rem;
   max-width: 1000px;
@@ -59,30 +108,65 @@ p {
   padding-left: 0.8rem;
 }
 
+/* =========================
+   CARDS
+========================= */
 .card {
   background: rgba(255, 255, 255, 0.06);
-  border-radius: 16px;
+  border-radius: 18px;
   padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  backdrop-filter: blur(6px);
+  margin-bottom: 1.2rem;
+  backdrop-filter: blur(8px);
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
 }
 
+.card:hover {
+  background: rgba(124, 124, 255, 0.12);
+  transform: translateY(-4px);
+}
+
+/* =========================
+   GRID
+========================= */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
+/* =========================
+   DEVELOPER CARD
+========================= */
 .credit-card {
   background: linear-gradient(135deg, #6b73ff, #000dff);
   color: white;
-  border-radius: 18px;
-  padding: 1.5rem;
+  border-radius: 20px;
+  padding: 1.6rem;
   font-family: monospace;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
 }
 
 .credit-card .number {
   letter-spacing: 3px;
   font-size: 1.1rem;
   margin: 1rem 0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+  .canvas-wrapper {
+    height: 240px;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+  }
+
+  .section h2 {
+    font-size: 1.7rem;
+  }
 }
